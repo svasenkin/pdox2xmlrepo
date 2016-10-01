@@ -21,31 +21,29 @@ namespace pdox2xml
 
             if(dlg.ShowDialog() == DialogResult.OK)
             {
-                ParadoxTable tbl = new ParadoxTable(dlg.FileName, "tbl");
+                ParadoxTable tbl = new ParadoxTable(Path.GetDirectoryName(dlg.FileName), Path.GetFileNameWithoutExtension(dlg.FileName));
                 XElement root = new XElement("Data");
                 string[] fnames = tbl.FieldNames;
+                ParadoxRecord r = tbl.Enumerate().First<ParadoxRecord>();
+                Type[] types = (from c in r.DataValues.AsEnumerable() select c.GetType()).ToArray();
+                List<XAttribute> lst = new List<XAttribute>();
+
+                for (int i = 0;i != fnames.Length; i++)
+                {
+                    lst.Add(new XAttribute(fnames[i], types[i].ToString()));
+                }
+                XElement hdr = new XElement("Header", null);
+                hdr.Add(lst);
+                root.Add(hdr);
 
                 foreach(var rec in tbl.Enumerate())
                 {
+                    int i = 0;
                     XElement trec = new XElement("Record", from c in rec.DataValues.AsEnumerable()
-                                                           select new XElement("", c));
+                                                           select new XElement(fnames[i++], c));
                     root.Add(trec);
                 }
                 
-                /*  int recIndex = 0;
-                  foreach(var rec in tbl.Enumerate())
-                  {
-                      Console.WriteLine("Record #{0}", recIndex++);
-                      for (int i = 0; i < tbl.FieldCount; i++)
-                      {
-                          Console.WriteLine("    {0} = {1}", tbl.FieldNames[i], rec.DataValues[i]);
-                      }
-                      if (recIndex > 10) break;
-                  }
-                  */
-
-              /*  XElement data = new XElement("data", from c in tbl.Enumerate()
-                                                     select new XElement("", c.DataValues));*/
                 string newpath = Path.ChangeExtension(dlg.FileName, ".xml");
                 root.Save(newpath);
                 Console.WriteLine(newpath);
