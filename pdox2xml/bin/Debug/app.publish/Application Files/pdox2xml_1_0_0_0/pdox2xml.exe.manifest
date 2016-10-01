@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="pdox2xml.exe" version="1.0.0.0" publicKeyToken="293433cc04bb68d1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="pdox2xml" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="pdox2xml.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ParadoxReader.dll" size="23040">
+      <assemblyIdentity name="ParadoxReader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xIeSZt5+y5GRqiHWxtXS/YSMPi8JDe+kP+/gOIsXH8s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pdox2xml.exe" size="6032">
+      <assemblyIdentity name="pdox2xml" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SXaMoCWOWX3yp6vT1013/qxd6Tm4MiNGkSsQ4TEk0A4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="pdox2xml.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MSI\user" issuerKeyHash="add9048a851ed0c0f5bc5648d890e8dbc132e3c1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LFPGzg2nZfCIA7HVoO78mGgOGe4YG+0yTFAn26hIKZc=</DigestValue></Reference></SignedInfo><SignatureValue>Nfj94POAFl7A/WL6QvubHVuAD8cxcUL6XbQQuteHAJZNfVY2gssTHdMilVmkV8X/lL2dw/rt8LiynUCj8HlnR3tsPh0W6+4wosnCXPHbPptjaY16OQZ7lYdAjAgayjxI4rTPdYwPJ68pGa7IWcicgBznM8C58PYihT8nOE7wUDY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>oZkGEGt22Bgik6QDKA88mpqOefGx4CYyWO6/93VcDfX78ETIXQ7++fhlRFgagoWDn8bBYzt43nBKywOpaZYHXVWePvoGFXR8d/yJvZbwFsLaJgdtRQqdz6RiwlBvapDCP2f0mZ5dkRYsO6uT3WicLj1UtZZ2BQ1DQrk3ZJem660=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="972948a8db27504c32ed1b18ee190e6898fceea0d5b10388f065a70dcec6532c" Description="" Url=""><as:assemblyIdentity name="pdox2xml.exe" version="1.0.0.0" publicKeyToken="293433cc04bb68d1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MSI\user</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>0buIByBXGHkFTXp20TSE4sjV+j1M81bmpYousmquDv4=</DigestValue></Reference></SignedInfo><SignatureValue>hArUfiapJubJlaLVH0QLDa3njjcQwb5a9TqlWtWAfiMGSsVtf+dRnqEex5AD+Vc/os1SqRaWELcZe9aSZitwpmNJmK3co6aHZufXu+7DwZ3lwOnfG2YrSRVk/Wg4GZLBxPXuA2t47PYGwt0+lQeG0mkeu/pF7qbCo49RRe2I92s=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oZkGEGt22Bgik6QDKA88mpqOefGx4CYyWO6/93VcDfX78ETIXQ7++fhlRFgagoWDn8bBYzt43nBKywOpaZYHXVWePvoGFXR8d/yJvZbwFsLaJgdtRQqdz6RiwlBvapDCP2f0mZ5dkRYsO6uT3WicLj1UtZZ2BQ1DQrk3ZJem660=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQTaGfTLmme4pMu2vGWzGuYzANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDHhAATQBTAEkAXAB1AHMAZQByMB4XDTE2MTAwMTExMTE0NVoXDTE3MTAwMTE3MTE0NVowGzEZMBcGA1UEAx4QAE0AUwBJAFwAdQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAoZkGEGt22Bgik6QDKA88mpqOefGx4CYyWO6/93VcDfX78ETIXQ7++fhlRFgagoWDn8bBYzt43nBKywOpaZYHXVWePvoGFXR8d/yJvZbwFsLaJgdtRQqdz6RiwlBvapDCP2f0mZ5dkRYsO6uT3WicLj1UtZZ2BQ1DQrk3ZJem660CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAym2/VqYngPN+7ZV6xGq0aoXyvMmhBubfzxYD8K9LHAPR068tHk5FXbnM+GwWZMEjWkJVYTCqfEj9ELXSgoOBU3DGiJiv42xz9cf9TvWts2kbUxMwaDr0g10MTWenDIj1YHY0uiEZpq3bKFQEtLV5OxPcnXC9IMmeAw2XpisJxCQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

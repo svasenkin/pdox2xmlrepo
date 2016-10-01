@@ -1,0 +1,12 @@
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\bin\Debug\pdox2xml.exe.config
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\bin\Debug\pdox2xml.exe
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\bin\Debug\pdox2xml.pdb
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\bin\Debug\ParadoxReader.dll
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\bin\Debug\ParadoxReader.pdb
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\obj\Debug\pdox2xml.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\obj\Debug\pdox2xml.exe
+c:\users\user\documents\visual studio 2015\Projects\pdox2xml\pdox2xml\obj\Debug\pdox2xml.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\pdox2xml\pdox2xml\bin\Debug\pdox2xml.exe.manifest
+C:\Users\user\Documents\Visual Studio 2015\Projects\pdox2xml\pdox2xml\bin\Debug\pdox2xml.application
+C:\Users\user\Documents\Visual Studio 2015\Projects\pdox2xml\pdox2xml\obj\Debug\pdox2xml.exe.manifest
+C:\Users\user\Documents\Visual Studio 2015\Projects\pdox2xml\pdox2xml\obj\Debug\pdox2xml.application
